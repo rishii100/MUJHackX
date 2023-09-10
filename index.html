@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> MUJ HackX </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content ="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="shortcut icon" href="./images/appteam.jpeg" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" type="text/css" href="./css/responsive.css">
+	<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			let devfolioOptions = {
+					buttonSelector: '#devfolio-apply-now',
+					key: 'hackonhills',
+			}
+			script.onload = function () {
+					new Devfolio(devfolioOptions);
+					let e1 = document.createElement('div');
+					e1.className = "button-back";
+					document.getElementById("devfolio-apply-now").appendChild(e1);
+			}
+
+			script.onerror = function () {
+					document.querySelector(devfolioOptions.buttonSelector).addEventListener('click', function () {
+						window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfk8nECgbjpnNOce1r_0_ZbhfT1Q8Sea-uAxzvfuaxv-5eTvA/viewform?usp=sharing://devfolio.co/external-apply/' + devfolioOptions.key;
+					});
+			}
+		});
+	</script>
+</head>
+<body>
+	<div class="header">
+		<div class="blurred"></div>
+		<ul class="nav">
+			<li class="head">
+				<span class="closeHeader">
+					<img src="./images/cross.svg">
+				</span>
+			</li>
+			<li class="navItem active"> Home </li>
+			<li class="navItem"> About Us </li>
+			<!-- <li class="navItem"> Gallery </li> -->
+			<li class="navItem"> Tracks </li>
+			<li class="navItem"> Schedule </li>
+			<li class="navItem"> Sponsors </li>
+			<li class="navItem"> Prizes </li>
+			<li class="navItem"> FAQs </li>
+		</ul>
+	</div>
+	<div class="fullOverlay"></div>
+	<div class="content">
+		<div class="hamburger">
+			<img src="./images/menu.svg">
+		</div>
+		<div class="appteam-logo">
+		
+		</div>
+		<div class="frame frame1">
+			<img src="./images/back-1.svg" class="img-back">
+			<div class="frame1-right">
+				<img src="./images/frame1-icon.svg">
+			</div>
+			<div class="frame1-left">
+				<div class="content">
+					<div class="name"> MUJ HackX </div><br>
+					<div class="date"> 14-15 September 2023 </div><br>
+					<div class="devfolio">
+						<button id="devfolio-apply-now"> Register Now   </button>
+					</div>
+				</div>
+			</div>
+			<div class="app-team-icon">
+				<img src="./images/appteam.jpeg">
+			</div>
+		</div>
+		<div class="frame frame2">
+			<img class="img-back-left" src="./images/back-2.svg">
+			<img class="img-back" src="./images/back-3.svg">
+			<div class="frame2-left">
+				<img src="./images/muj121.png">
+				
+			</div>
+			<div class="frame2-right">
+				<br>
+				<div class="name"> ABOUT US </div>
+				<div class="content">
+					
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, ut! Reprehenderit accusantium animi nam numquam quibusdam dolore sint explicabo! Debitis nulla saepe eaque tempore assumenda delectus aliquam dolorem laudantium ut.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, ut! Reprehenderit accusantium animi nam numquam quibusdam dolore sint explicabo! Debitis nulla saepe eaque tempore assumenda delectus aliquam dolorem laudantium ut.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, ut! Reprehenderit accusantium animi nam numquam quibusdam dolore sint explicabo! Debitis nulla saepe eaque tempore assumenda delectus aliquam dolorem laudantium ut.
+					</p>
+					
+				</div>
+			</div>
+		</div>
+		<div class="frame frame3">
+			<img src="./images/back-4.svg" class="img-back">
+			<img src="./images/back-5.svg" class="img-back-bottom">
+			<div class="frame5-content">
+				<div class="name"> Tracks </div>
+				<div class="track-icons">
+					<div class="a-track">
+						<div class="colorless">
+							<img src="./images/Tracks/blockchain.svg">
+						</div>
+						<div class="colorful">
+							<img src="./images/Tracks/blockchain-color.svg">
+						</div>
+						<div class="track-name">
+							Blockchain
+						</div>
+					</div>
+					<div class="a-track">
+						<div class="colorless">
+							<img src="./images/Tracks/iot.svg">
+						</div>
+						<div class="colorful">
+							<img src="./images/Tracks/iot-color.svg">
+						</div>
+						<div class="track-name">
+							IoT
+						</div>
+					</div>
+					<div class="a-track">
+						<div class="colorless">
+							<img src="./images/Tracks/ai.svg">
+						</div>
+						<div class="colorful">
+							<img src="./images/Tracks/ai-color.svg">
+						</div>
+						
+						<div class="track-name">
+							AI
+						</div>
+					</div>
+					<div class="a-track">
+						<div class="colorless">
+							<img src="./images/Tracks/webapp.svg">
+						</div>
+						<div class="colorful">
+							<img src="./images/Tracks/webapp-color.svg">
+						</div>
+						<div class="track-name">
+							Web&nbsp;/&nbsp;App
+						</div>
+					</div>
+					<div class="a-track">
+						<div class="colorless">
+							<img src="./images/Tracks/vr.svg">
+						</div>
+						<div class="colorful">
+							<img src="./images/Tracks/vr-color.svg">
+						</div>
+						<div class="track-name">
+							AR&nbsp;/&nbsp;VR
+						</div>
+					</div>
+					<div class="a-track">
+						<div class="colorless">
+							<img src="./images/Tracks/general.svg">
+						</div>
+						<div class="colorful">
+							<img src="./images/Tracks/general-color.svg">
+						</div>
+						<div class="track-name">
+							General
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="frame frame4">
+			<img class="img-back-left" src="./images/back-3.svg">
+			<img class="img-back" src="./images/back-2.svg">
+			<div class="frame4-left">
+				<img src="./images/design.png">
+			</div>
+			<div class="frame4-right">
+				<div class="name"> Timeline </div>
+				<div class="timeline">
+					<div class="schedule schedule-1">
+						<div class="dot"></div>
+						<div class="schedule-content">
+							<div class="schedule-date"> 14th September 2023</div>
+							<div class="schedule-title"> Opening Ceremony and Pre Hackathon meet </div>
+							<div class="schedule-text"> <span class="schedule-time"> 5:00 PM - </span> Inauguration </div>
+							<div class="schedule-text"> <span class="schedule-time"> 4:25 PM - 4:30 PM - </span> Schedule + Rules of Events </div>
+							<div class="schedule-text"> <span class="schedule-time"> 4:30 PM - 5:00 PM - </span> Github Keynote </div>
+							<div class="schedule-text"> <span class="schedule-time"> 5:00 PM - 5:30 PM - </span> Mozilla AR/VA Talk </div>
+							<div class="schedule-text"> <span class="schedule-time"> 5:30 PM - 6:00 PM - </span> Coding Blocks ML Talk </div>
+							<div class="schedule-text"> <span class="schedule-time"> 6:00 PM - 7:00 PM - </span> Doubts and Team formation discussions </div>
+						</div>
+					</div>
+					<div class="schedule schedule-2">
+						<div class="dot"></div>
+						<div class="schedule-content">
+							<div class="schedule-date"> 15th September 2023 </div>
+							<div class="schedule-title"> Hacking begins </div>
+							<div class="schedule-text"> <span class="schedule-time"> 8:00 AM - </span> Commencement of Hackathon Day-1 </div>
+							<div class="schedule-text"> <span class="schedule-time"> 11:00 AM - 12:00 PM - </span> Coding Blocks ML Workshop </div>
+							<div class="schedule-text"> <span class="schedule-time"> 2:00 PM - 8:00 PM - </span> Evaluation Day-1 </div>
+							<div class="schedule-text"> <span class="schedule-time"> 2:00 PM - 3:00 PM - </span> Github Workshop </div>
+							<div class="schedule-text"> <span class="schedule-time"> 3:00 PM - 3:30 PM - </span> Quicknode Workshop </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--<div class="frame frame5">
+			<img src="./images/back-4.svg" class="img-back">
+			<img src="./images/back-5.svg" class="img-back-bottom">
+			<div class="frame5-content">
+				<div class="name"> Sponsors </div>
+				<div class="sponsor-icons">
+					<div class="sponsor-icon main-sponsor">
+						<a href="http://github.com/" target="__blank"><img src="./images/Sponsors/GitHub_Logo.png"></a>
+					</div>
+					<div class="sponsor-icon">
+						<a href="https://ebizontek.com/" target="__blank"><img src="./images/Sponsors/EbizON-LOGO.png"></a>
+					</div>
+					<div class="sponsor-icon dev-icon">
+						<a href="https://devfolio.co/" target="__blank"><img src="./images/Sponsors/devfolio.png"></a>
+					</div>
+					<div class="sponsor-icon">
+						<a href="https://simbachain.com/" target="__blank"><img src="./images/Sponsors/SIMBA_logo-h.png"></a>
+					</div>
+					<div class="sponsor-icon square-icon">
+						<a href="https://quiknode.io/" target="__blank"><img src="./images/Sponsors/QuikNode.png"></a>
+					</div>
+					<div class="sponsor-icon">
+						<a href="https://matic.network/" target="__blank"><img src="./images/Sponsors/Matic_Logo.png"></a>
+					</div>
+					<div class="sponsor-icon dev-icon">
+						<a href="https://metabrainz.org/" target="__blank"><img src="./images/Sponsors/meta.png"></a>
+					</div>
+					<div class="sponsor-icon">
+						<a href="https://about.gitlab.com/" target="__blank"><img src="./images/Sponsors/gitlab.png"></a>
+					</div>
+					<div class="sponsor-icon square-icon">
+						<a href="https://himachal.nic.in/en-IN/" target="__blank"><img src="./images/Sponsors/himachal govt logo.png"></a>
+					</div>
+					<div class="sponsor-icon dev-icon">
+						<a href="https://codingblocks.com/" target="__blank"><img src="./images/Sponsors/Logo_DarkGrey_ NoShadow.png"></a>
+					</div>
+					<div class="sponsor-icon square-icon">
+						<a href="https://zulipchat.com/" target="__blank"><img src="./images/Sponsors/zulip-logo.png"></a>
+					</div>
+					<div class="sponsor-icon">
+						<a href="https://hasura.io/" target="__blank"><img src="./images/Sponsors/hasura_logo_horizontal_black.png"></a>
+					</div>
+					<div class="sponsor-icon">
+						<a href="https://www.roposo.com/" target="__blank"><img src="./images/Sponsors/roposo.png"></a>
+					</div>
+					
+					<div class="sponsor-icon">
+						<a href="https://socialcops.com/" target="__blank"><img src="./images/Sponsors/socialcops.png"></a>
+					</div>
+					<div class="sponsor-icon dev-icon">
+						<a href="https://www.stickermule.com/" target="__blank"><img src="./images/Sponsors/sticker-mule-logo-dark.png"></a>
+					</div>
+					<div class="sponsor-icon dev-icon">
+						<a href="https://www.stickwidit.com/" target="__blank"><img src="./images/Sponsors/stickwidit.png"></a>
+					</div>
+					<div class="sponsor-icon square-icon">
+						<a href="https://duassassins.in/" target="__blank"><img src="./images/Sponsors/Team Du Assassins!  20180619_140523.jpg"></a>
+					</div>
+					<div class="sponsor-icon dev-icon">
+						<a href="https://www.hellointern.com/" target="__blank"><img src="./images/Sponsors/HI-Logo-PNG.png"></a>
+					</div>
+					<div class="sponsor-icon dev-icon">
+						<a href="http://ohcampus.com/v2/" target="__blank"><img src="./images/Sponsors/OhCampus New Logo.png"></a>
+					</div>
+					<div class="sponsor-icon middle-icon">
+						<a href="https://www.producthunt.com/" target="__blank"><img src="./images/Sponsors/product-hunt.png"></a>
+					</div>
+					<div class="sponsor-icon square-icon">
+						<a href="https://www.jetbrains.com/" target="__blank"><img src="./images/Sponsors/JetBrains-Logo.svg"></a>
+					</div>
+					<div class="sponsor-icon">
+						<a href="https://www.sketchapp.com/" target="__blank"><img src="./images/Sponsors/sketch-logo-light-transparent@2x.png"></a>
+					</div>
+					<div class="sponsor-icon square-icon">
+						<a href="https://www.creative-tim.com/" target="__blank"><img src="./images/Sponsors/Creative-tim.png"></a>
+					</div>
+					<div class="sponsor-icon">
+						<a href="https://www.bugsee.com/" target="__blank"><img src="./images/Sponsors/bugsee.png"></a>
+					</div>
+				</div> 
+				<div class="frame5-text">
+					Interested in making 'Hack on Hills' a huge success.<br>
+					Come join us by sponsoring us. Check the &nbsp;<a href="./pdf/sponsorship-brochure.pdf" target="__blank">Sponsorship Brochure</a>&nbsp; for more details.
+				</div>
+			</div>
+		</div>-->
+		<div class="frame frame6">
+			<img src="./images/back-6.svg" class="img-back-left">
+			<img src="./images/back-7.svg" class="img-back-right">
+			<div class="name"> Prizes </div>
+			<div class="prizes">
+				<div class="prizes-cont">
+					<div class="prize">
+						<div class="prize-img">
+							<img src="./images/mmuujj.jpeg">
+						</div>
+						<div class="prize-text">
+							First Prize : ₹ 15000 Cash
+						</div>
+					</div>
+					<div class="prize">
+						<div class="prize-img">
+							<img src="./images/mmuujj.jpeg">
+						</div>
+						<div class="prize-text">
+							Second Prize : ₹ 10000 Cash
+						</div>
+					</div>
+					<div class="prize">
+						<div class="prize-img">
+							<img src="./images/mmuujj.jpeg">
+						</div>
+						<div class="prize-text">
+							Third Prize : ₹ 5000 Cash
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+		<div class="frame frame7">
+			<img src="./images/back-4.svg" class="img-back">
+			<img src="./images/back-5.svg" class="img-back-bottom">
+			<div class="frame7-content">
+				<div class="name">
+					FAQs
+				</div>
+				<div class="faq">
+					<div class="question">
+						QUESTION1
+					</div>
+					<div class="answer">
+				ANS 1
+					</div>
+
+				</div>
+				<div class="faq">
+					<div class="question">
+						Q2
+					</div>
+					<div class="answer">
+						A2
+					</div>
+				</div>
+			
+			</div>
+		</div>
+		<div class="frame frame8">
+			<div class="footer-icons">
+				<a href="#" target="__blank"><img src="./images/github-color.svg"></a>
+				<a href="#" target="__blank"><img src="./images/fb-color.svg"></a>
+				<a href="#/" target="__blank"><img src="./images/insta-color.svg"></a>
+				<a href="#" target="__blank"><img src="./images/twitter-color.svg"></a>
+				<a href="#" target="__blank"><img src="./images/linkedin-color.svg"></a>
+				<a href="#"><img src="./images/email-color.svg"></a>
+			</div>
+			<div class="footer-text">
+				<a href="#" target="__blank"> Code of Conduct </a>
+			</div>
+			<div class="footer-text">
+				&copy; 2023 Team MUJ HackX
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/menu.js"></script>
+</body>
+</html>

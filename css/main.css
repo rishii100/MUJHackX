@@ -1,0 +1,899 @@
+@font-face {
+	font-family: primetime;
+	src: url("../fonts/PRIMETIME.ttf");
+}
+
+@font-face {
+	font-family: champagne;
+	src: url("../fonts/Champagne & Limousines.ttf");
+}
+
+div, body, ul, li {
+	margin: 0px;
+	padding: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	position: relative;
+	overflow-x: hidden;
+}
+
+.header {
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	background-color: #c5480e;
+	z-index: 12;
+	text-align: center;
+	-webkit-transition: left 0.3s;
+	-moz-transition: left 0.3s;
+	transition: left 0.3s;
+}
+
+.header.active {
+	left: 0%;
+	background-color: #c5480e;
+}
+
+.header .nav {
+	list-style-type: none;
+	background-color: #c5480e;
+}
+
+.header .nav .navItem {
+	left: -300px;
+}
+
+.header .nav .navItem.visible {
+	left: 0px;
+}
+
+.header .nav .navItem {
+	position: relative;
+	padding: 15px 30px;
+	color: #ffffff;
+	cursor: pointer;
+	font-family: 'primetime';
+	font-size: 1em;
+	background-color: #c5480e;
+	-webkit-transition: background-color 0.2s, left 0.2s;
+	-moz-transition: background-color 0.2s, left 0.2s;
+	transition: background-color 0.2s, left 0.2s;
+}
+
+.header .nav .navItem.active {
+	color: #000000;
+}
+
+.header .nav .navItem:hover {
+	background-color: rgba(255,255,255,0.2);
+}
+
+.header .nav .head {
+	display: none;
+	text-align: right;
+	padding: 20px;
+}
+
+.header .nav .head .closeHeader {
+	cursor: pointer;
+}
+
+.header .nav .head img {
+	height: 20px;
+}
+
+.content {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	left: 0%;
+	-webkit-transition: left 0.3s;
+	-moz-transition: left 0.3s;
+	transition: left 0.3s;
+}
+
+.hamburger {
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	color: white;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.hamburger img {
+	height: 30px;
+}
+
+.appteam-logo {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	z-index: 10;
+}
+
+.appteam-logo img {
+	height: 60px;
+	width: 50px;
+}
+
+.fullOverlay {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(0,0,0,0.6);
+	z-index: 7;
+	display: none;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+	transition: opacity 0.3s
+}
+
+.frame {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+/***********************
+	LANDING PAGE
+***********************/
+
+.frame1 {
+	height: 110%;
+	background-color: #f68b10;
+}
+
+.frame1 .img-back {
+	width: 102%;
+	left: -1%;
+	height: auto;
+	position: absolute;
+	z-index: 2;
+	bottom: 0px;
+}
+
+.frame1-left {
+	position: absolute;
+	left: 0px;
+	width: 55%;
+	height: 100%;
+	display: inline-block;
+	z-index: 3;
+	padding: 50px 10px;
+	text-align: center;
+}
+
+.frame1-left .content {
+	text-align: left;
+	display: inline-block;
+	width: auto;
+	position: relative;
+	/*top: 20%;*/
+	top: 40%;
+	height: auto;
+	transform: translateY(-50%);
+}
+
+.frame1-left .name {
+	display: inline-block;
+	font-family: primetime;
+	font-size: 3.5em;
+	color: white;
+}
+
+.frame1-left .date {
+	display: inline-block;
+	font-size: 1.7em;
+	font-weight: bold;
+	margin-top: 5px;
+	color: rgba(255,255,255,0.8);
+	font-family: 'Didact Gothic';
+}
+
+.frame1-left .devfolio {
+	margin-top: 20px;
+}
+
+.frame1-left .devfolio button {
+	border: 2px solid rgba(255,255,255,0.8);
+	background-color: rgba(255,255,255,0);
+	color: rgba(255,255,255,0.8);
+	font-family: 'Didact Gothic';
+	padding-left: 30px;
+	padding-right: 30px;
+	height: 50px;
+	font-size: 1em;
+	font-weight: bold;
+	cursor: pointer;
+	overflow: none;
+	position: relative;
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: 0.3s;
+}
+
+.frame1-left .devfolio button .button-back {
+	background-color: rgba(255,255,255,0.8);
+	width: 0%;
+	height: 100px;
+	position: absolute;
+	height: 46px;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+	-webkit-transition: width 0.3s;
+	-moz-transition: width 0.3s;
+	transition: width 0.3s;
+
+}
+
+.frame1-left .devfolio button:hover {
+	color: #ffffff;
+}
+
+.frame1-left .devfolio button:hover .button-back {
+	width: 100%;
+}
+
+.frame1-right {
+	width: 45%;
+	height: 100%;
+	display: inline-block;
+	position: absolute;
+	right: 0px;
+	z-index: 3;
+}
+
+.frame1-right img {
+	width: 80%;
+	/*position: absolute;*/
+	left: 10%;
+	/*top: 10%;*/
+	height: auto;
+	position: relative;
+	top: 40%;
+	transform: translateY(-50%);
+}
+
+#devfolio-apply-now .logo {
+    fill: white;
+}
+
+#devfolio-apply-now:hover .logo {
+    fill: #f68b10;
+}
+
+#devfolio-apply-now:hover {
+    color: #f68b10;
+}
+
+#devfolio-apply-now {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+}
+
+.sponsor-name {
+	color: white;
+	font-family: 'Didact Gothic';
+	font-weight: bold;
+	font-size: 1.5em;
+	color: rgba(255,255,255,0.8);
+}
+
+.github-home-icon {
+	width: 100px;
+	margin-right: 10px;
+}
+
+.app-team-icon {
+	width: 70px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+
+.app-team-icon img {
+	width: 100%;
+}
+
+/***********************
+	DIVERSITY PAGE
+***********************/
+
+.frame2 {
+	/*min-height: 100%;*/
+	margin-bottom: 30px;
+}
+
+.frame2-left {
+	position: absolute;
+	right: 0px;
+	width: 50%;
+	min-height: 100%;
+	display: inline-block;
+	z-index: 3;
+	padding: 50px 10px;
+	text-align: center;
+}
+
+.frame2-right {
+	width: 50%;
+	min-height: 100%;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	left: 0px;
+	z-index: 3;
+	padding: 20px;
+}
+
+.frame2-right .name {
+	font-family: primetime;
+	color: #293d3d;
+	text-align: center;
+	font-size: 2em;
+}
+
+.frame2-left img {
+	width: 70%;
+	position: absolute;
+	left: 10%;
+	top: 10%;
+	height: auto;
+}
+
+.frame2 .img-back {
+	position: absolute;
+	right: -100px;
+	top: 20%;
+	width: 600px;
+	height: auto;
+}
+
+.frame2 .img-back-left {
+	position: absolute;
+	left: -100px;
+	top: 0%;
+	width: 650px;
+	height: auto;
+}
+
+.frame2 .content {
+	position: relative;
+	font-family: 'Didact Gothic';
+	font-size: 1.2em;
+	text-align: justify;
+	padding: 30px 50px;
+	line-height: 1.4em;
+}
+
+.frame2 a {
+	color: black;
+	text-decoration: none;
+}
+
+.frame2 a:visited {
+	color: black;
+}
+
+/***********************
+	  TRACKS PAGE
+***********************/
+
+.frame3 {
+	height: auto;
+	padding: 150px 0px;
+	background-color: #f68b10;
+	color: white;
+	font-family: 'Didact Gothic';
+	text-align: center;
+}
+
+.frame3 .img-back {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.frame3 .img-back-bottom {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	bottom: -5px;
+	left: 0px;
+}
+
+.frame3 .name {
+	font-family: primetime;
+	color: white;
+	font-size: 2em;
+	margin-bottom: 30px;
+}
+
+.frame3 .track-icons {
+	width: 80%;
+	display: inline-block;
+}
+
+.frame3 .a-track {
+	width: 30%;
+	text-align: center;
+	background-color: white;
+	border-radius: 10px;
+	display: inline-block;
+	margin-left: 1.5%;
+	margin-right: 1.5%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.frame3 .colorless {
+	position: relative;
+	top: 20px;
+	left: 0px;
+	width: 100%;
+	padding: 20px;
+}
+
+.frame3 .colorful {
+	position: absolute;
+	top: 20px;
+	left: 0px;
+	width: 100%;
+	padding: 20px;
+	opacity: 0;
+}
+
+.frame3 .a-track:hover .colorful {
+	opacity: 1;
+}
+
+.frame3 .a-track img {
+	width: 50%;
+}
+
+.frame3 .track-name {
+	font-size: 1.1em;
+	padding: 20px 0px;
+	font-family: 'primetime';
+	color: #f68b10;
+	/*font-weight: bold;*/
+}
+
+/***********************
+	SCHEDULE PAGE
+***********************/
+
+.frame4 {
+	/*min-height: 100%;*/
+	height: auto;
+	margin-bottom: 30px;
+}
+
+.frame4-left {
+	position: absolute;
+	left: 0px;
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+	z-index: 3;
+	padding: 50px 10px;
+	text-align: center;
+}
+
+.frame4-right {
+	width: 50%;
+	display: inline-block;
+	position: relative;
+	left: 50%;
+	text-align: center;
+	z-index: 3;
+	padding: 20px;
+}
+
+.frame4-right .name {
+	font-family: primetime;
+	color: #293d3d;
+	text-align: center;
+	font-size: 2em;
+}
+
+.frame4-left img {
+	width: 80%;
+	position: absolute;
+	left: 10%;
+	/*top: 10%;*/
+	top: 60%;
+	transform: translateY(-50%);
+	height: auto;
+}
+
+.frame4 .img-back {
+	position: absolute;
+	right: -100px;
+	top: 20%;
+	width: 600px;
+	height: auto;
+}
+
+.frame4 .img-back-left {
+	position: absolute;
+	left: -100px;
+	top: 0%;
+	width: 650px;
+	height: auto;
+}
+
+.frame4 .timeline {
+	margin-top: 20px;
+	padding: 20px 0px;
+	border-left: 4px solid #f68b10;
+	width: 80%;
+	display: inline-block;
+}
+
+.schedule {
+	margin-top: 20px;
+	text-align: left;
+	padding: 0px 30px;
+	position: relative;
+	font-family: 'Didact Gothic';
+}
+
+.schedule .dot {
+	height: 20px;
+	width: 20px;
+	border-radius: 50px;
+	border: 7px solid #293d3d;
+	background-color: white;
+	position: absolute;
+	top: 5px;
+	left: -12px;
+}
+
+.schedule-content {
+	padding: 0px 10px 20px 10px;
+	border-bottom: 2px solid #f68b10;
+}
+
+.schedule-date {
+	font-size: 1.3em;
+	font-weight: bold;
+	color: #293d3d;
+}
+
+.schedule-title {
+	font-size: 1.1em;
+	margin-top: 5px;
+	color: #293d3d;
+}
+
+.schedule-text {
+	font-size: 0.9em;
+	margin-top: 5px;
+	color: #000000;
+}
+
+.schedule-3 .schedule-content {
+	border-bottom: none;
+}
+
+.schedule-time {
+	font-weight: bold;
+}
+
+/***********************
+	 SPONSORS PAGE
+***********************/
+
+.frame5 {
+	height: auto;
+	padding: 150px 0px;
+	background-color: #f68b10;
+	color: white;
+	font-family: 'Didact Gothic';
+	text-align: center;
+}
+
+.frame5 .img-back {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.frame5 .img-back-bottom {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	bottom: -5px;
+	left: 0px;
+}
+
+.frame5 .name {
+	font-family: primetime;
+	color: white;
+	font-size: 2em;
+	margin-bottom: 30px;
+}
+
+.frame5 .sponsor-icons {
+	width: 80%;
+	background-color: rgba(255,255,255,0.9);
+	padding: 20px;
+	display: inline-block;
+	margin-bottom: 20px;
+	/*box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.2);*/
+	text-align: center;
+}
+
+.sponsor-icons .sponsor-icon {
+	width: 30%;
+	display: inline-block;
+	padding: 10px 0px;
+	vertical-align: middle;
+	margin-bottom: 10px;
+}
+
+.sponsor-icons .sponsor-icon.main-sponsor {
+	width: 100%;
+	display: block;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+.sponsor-icons .sponsor-icon.main-sponsor img {
+	width: 40%;
+	height: auto;
+}
+
+.sponsor-icons .sponsor-icon.square-icon img {
+	width: 45%;
+	height: auto;
+}
+
+.sponsor-icons .sponsor-icon.middle-icon img {
+	width: 60%;
+	height: auto;
+}
+
+.sponsor-icons .sponsor-icon img {
+	width: 80%;
+	height: auto;
+}
+
+.frame5-content {
+	z-index: 3;
+	position: relative;
+}
+
+.frame5-text {
+	font-size: 1.2em;
+	padding: 0px 10px;
+}
+
+.frame5 a {
+	color: white;
+}
+
+.sponsor-icons .sponsor-icon.advantIcon img {
+	width: 50%;
+}
+
+.sponsor-icons .sponsor-icon.rawIcon img {
+	width: 40%;
+}
+
+.sponsorTitle {
+	color: #10333c;
+}
+
+/***********************
+	   PRIZES PAGE
+***********************/
+
+.frame6 {
+	height: auto;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.frame6 .name {
+	font-family: primetime;
+	color: #293d3d;
+	text-align: center;
+	font-size: 2em;
+	margin: 10px 0px 20px 0px;
+	position: relative;
+}
+
+.frame6 .img-back-left {
+	width: 600px;
+	height: auto;
+	position: absolute;
+	top: 10%;
+	left: -10%;
+}
+
+.frame6 .img-back-right {
+	width: 600px;
+	height: auto;
+	position: absolute;
+	top: 30%;
+	right: 5%;
+}
+
+.frame6 .prizes {
+	width: 70%;
+	/*padding: 20px;*/
+	position: relative;
+	display: inline-block;
+}
+
+.prizes-cont {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.prize {
+	/*display: table-cell;*/
+	width: 30%;
+	overflow: hidden;
+	display: inline-block;
+	border: 2px solid #f68b10;
+	margin: 1.5%;
+	background-color: white;
+	padding: 20px 0px;
+	border-radius: 10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.prize-img {
+	padding: 20px;
+	text-align: center;
+}
+
+.prize-img img {
+	width: 70%;
+}
+
+.prize-text {
+	font-family: 'Didact Gothic';
+	color: #293d3d;
+	font-weight: bold;
+	background-color: #f68b10;
+	color: white;
+	padding: 10px 15px;
+	width: 100%;
+	align-self: flex-end;
+}
+
+.prize-img img.img-square {
+	width: 50%;
+}
+
+/***********************
+		FAQ PAGE
+***********************/
+
+.frame7 {
+	height: auto;
+	padding: 150px 0px;
+	background-color: #f68b10;
+	color: white;
+	font-family: 'Didact Gothic';
+	text-align: center;
+}
+
+.frame7-content .name {
+	color: white;
+	font-size: 2em;
+	font-family: 'primetime';
+	margin-bottom: 30px;
+}
+
+.frame7-content {
+	z-index: 3;
+	position: relative;
+	text-align: center;
+}
+
+.faq {
+	text-align: left;
+	display: inline-block;
+	color: white;
+	width: 80%;
+	font-family: 'Didact Gothic';
+	margin-bottom: 25px;
+}
+
+.question {
+	font-size: 1.3em;
+	font-weight: bold;
+	padding: 8px 0px;
+}
+
+.answer {
+	font-size: 1em;
+	border-left: 2px solid white;
+	padding-left: 10px;
+	color: white;
+}
+
+.answer a{
+	text-decoration: none; 
+	color: white;
+}
+
+.frame7 .img-back {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.frame7 .img-back-bottom {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	bottom: -5px;
+	left: 0px;
+}
+
+/***********************
+		 FOOTER
+***********************/
+
+.frame8 {
+	position: relative;
+	/*widows: 100%;*/
+	padding: 30px 0px;
+	background-color: #ffffff;
+	text-align: center;
+	color: #293d3d;
+	font-family: 'Didact Gothic';
+	font-weight: bold;
+}
+
+.frame8 .heart {
+	color: #e60000;
+}
+
+.footer-icons {
+	padding: 5px;
+}
+
+.footer-text {
+	padding: 5px;
+}
+
+.footer-text a {
+	color: #293d3d;
+	text-decoration: none;
+}
+
+.frame8 img {
+	width: 30px;
+	margin: 0px 5px;
+}
